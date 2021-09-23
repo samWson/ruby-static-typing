@@ -11,24 +11,36 @@ describe ToyRobot::Robot do
   it 'moves 3 spaces east' do
     3.times { @subject.move_east }
 
-    _(@subject.position).must_equal(3)
+    _(@subject.east).must_equal(3)
   end
 
   it 'moves 4 spaces east' do
     4.times { @subject.move_east }
 
-    _(@subject.position).must_equal(4)
+    _(@subject.east).must_equal(4)
   end
 
   it 'moves 3 spaces west' do
     3.times { @subject.move_west }
 
-    _(@subject.position).must_equal(-3)
+    _(@subject.east).must_equal(-3)
   end
 
   it 'moves 4 spaces west' do
     4.times { @subject.move_west }
 
-    _(@subject.position).must_equal(-4)
+    _(@subject.east).must_equal(-4)
+  end
+
+  it 'moves 3 spaces north' do
+    3.times { @subject.move_north }
+
+    _(@subject.north).must_equal(3)
+  end
+
+  it 'moves 4 spaces north' do
+    4.times { @subject.move_north }
+
+    _(@subject.north).must_equal(4)
   end
 end
