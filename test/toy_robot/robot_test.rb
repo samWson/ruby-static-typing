@@ -43,4 +43,16 @@ describe ToyRobot::Robot do
 
     _(@subject.north).must_equal(4)
   end
+
+  it 'moves 3 spaces south' do
+    3.times { @subject.move_south }
+
+    _(@subject.north).must_equal(-3)
+  end
+
+  it 'moves 3 spaces south' do
+    3.times { @subject.move_south }
+
+    _(@subject.north).must_equal(-3)
+  end
 end

@@ -17,6 +17,10 @@ module ToyRobot
       @north += 1
     end
 
+    def move_south
+      @north -= 1
+    end
+
     def move_west
       @east -= 1
     end
