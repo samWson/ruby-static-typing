@@ -24,6 +24,10 @@ Or install it yourself as:
 
 TODO: Write usage instructions here
 
+## Testing
+
+A test script is included in the `bin/` directory. Use the command `bin/test` to run the test suite.
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
