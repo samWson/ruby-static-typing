@@ -153,4 +153,18 @@ describe ToyRobot::Robot do
       _(@subject.direction).must_equal('NORTH')
     end
   end
+
+  describe 'report' do
+    before do
+      @subject = ToyRobot::Robot.new(5, 4, 'EAST')
+    end
+
+    it 'provides the current location and direction of the robot' do
+      _(@subject.report).must_equal({
+        east: 5,
+        north: 4,
+        direction: 'EAST'
+      })
+    end
+  end
 end

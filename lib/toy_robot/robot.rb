@@ -32,6 +32,14 @@ module ToyRobot
       @east -= 1
     end
 
+    def report
+      {
+        north: north,
+        east: east,
+        direction: direction
+      }
+    end
+
     def turn_left
       turn(:left)
     end
