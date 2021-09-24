@@ -74,6 +74,12 @@ describe ToyRobot::Robot do
 
       _(@subject.direction).must_equal('WEST')
     end
+
+    it 'turns right to face east' do
+      @subject.turn_right
+
+      _(@subject.direction).must_equal('EAST')
+    end
   end
 
   describe 'when facing south' do
@@ -91,6 +97,12 @@ describe ToyRobot::Robot do
       @subject.turn_left
 
       _(@subject.direction).must_equal('EAST')
+    end
+
+    it 'turns right to face west' do
+      @subject.turn_right
+
+      _(@subject.direction).must_equal('WEST')
     end
   end
 
@@ -110,6 +122,12 @@ describe ToyRobot::Robot do
 
       _(@subject.direction).must_equal('NORTH')
     end
+
+    it 'turns right to face south' do
+      @subject.turn_right
+
+      _(@subject.direction).must_equal('SOUTH')
+    end
   end
 
   describe 'when facing west' do
@@ -127,6 +145,12 @@ describe ToyRobot::Robot do
       @subject.turn_left
 
       _(@subject.direction).must_equal('SOUTH')
+    end
+
+    it 'turns right to face north' do
+      @subject.turn_right
+
+      _(@subject.direction).must_equal('NORTH')
     end
   end
 end

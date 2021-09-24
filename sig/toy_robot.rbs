@@ -17,5 +17,10 @@ module ToyRobot
     def move_west: () -> void
 
     def turn_left: () -> void
+    def turn_right: () -> void
+
+    private
+
+    def turn: (:left | :right) -> void
   end
 end
