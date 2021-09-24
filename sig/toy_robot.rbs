@@ -2,6 +2,8 @@ module ToyRobot
   VERSION: String
 
   class Robot
+    DIRECTIONS: Array[String]
+
     @east: Integer
     @north: Integer
     @direction: String
@@ -13,5 +15,7 @@ module ToyRobot
     def move_north: () -> void
     def move_south: () -> void
     def move_west: () -> void
+
+    def turn_left: () -> void
   end
 end
