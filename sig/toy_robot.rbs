@@ -1,0 +1,17 @@
+module ToyRobot
+  VERSION: String
+
+  class Robot
+    @east: Integer
+    @north: Integer
+    @direction: String
+
+    def initialize: (?Integer, ?Integer, ?String) -> void
+
+    def move: () -> void
+    def move_east: () -> void
+    def move_north: () -> void
+    def move_south: () -> void
+    def move_west: () -> void
+  end
+end
