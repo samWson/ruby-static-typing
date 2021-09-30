@@ -25,4 +25,18 @@ module ToyRobot
 
     def turn: (:left | :right) -> void
   end
+
+  class Table
+    def initialize: (Integer, Integer) -> void
+
+    def valid_location?: (Integer, Integer) -> bool
+  end
+
+  class Simulator
+    attr_reader robot: Robot
+
+    def initialize: (Table) -> void
+
+    def place: (Integer, Integer, String) -> Robot?
+  end
 end
