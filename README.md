@@ -32,6 +32,8 @@ A test script is included in the `bin/` directory. Use the command `bin/test` to
 
 RBS type signatures are included in the `sig` directory. Use `steep` to type check the repository: `steep check`.
 
+`steep watch` can also be used to automatically check files as they are saved.
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
