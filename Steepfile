@@ -1,4 +1,4 @@
-# D = Steep::Diagnostic
+D = Steep::Diagnostic
 
 target :lib do
 signature "sig"

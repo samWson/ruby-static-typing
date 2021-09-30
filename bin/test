@@ -1,6 +1,0 @@
-#!/usr/bin/env bash
-set -euo pipefail
-
-set -vx
-
-ruby -Ilib:test test/toy_robot/robot_test.rb --pride
