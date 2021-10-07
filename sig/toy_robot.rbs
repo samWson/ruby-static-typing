@@ -39,4 +39,12 @@ module ToyRobot
 
     def place: (Integer, Integer, String) -> Robot?
   end
+
+  class Command
+    def self.process: (String) -> (
+      [Symbol, (Integer | 0), (Integer | 0), String?]
+      | [Symbol, String]
+      | [Symbol]
+      )
+  end
 end
