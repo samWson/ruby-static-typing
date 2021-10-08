@@ -20,4 +20,20 @@ describe ToyRobot::Simulator do
 
     assert_nil @subject.robot
   end
+
+  describe 'robot placed at table boundary' do
+    before do
+      @subject.place(0, 4, 'NORTH')
+    end
+
+    it 'cannot move past the table boundary' do
+      @subject.move
+
+      message = "Robot is currently at (0, 4) and it's facing NORTH\n"
+
+      out, _ = capture_io do
+        @subject.report
+      end
+    end
+  end
 end

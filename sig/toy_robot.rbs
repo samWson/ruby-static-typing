@@ -38,6 +38,7 @@ module ToyRobot
     def initialize: (Table) -> void
 
     def place: (Integer, Integer, String) -> Robot?
+    def move: () -> void
   end
 
   class Command
@@ -45,6 +46,20 @@ module ToyRobot
       [Symbol, (Integer | 0), (Integer | 0), String?]
       | [Symbol, String]
       | [Symbol]
-      )
+    )
+  end
+
+  class CLI
+    attr_reader simulator: Simulator
+
+    def load_commands: (String) -> (
+      Array[
+        [Symbol, (Integer | 0), (Integer | 0), String?]
+        | [Symbol, String]
+        | [Symbol]
+      ]
+    )
+
+    def run: (Array[Symbol]) -> void
   end
 end

@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    toy_robot (0.9.0)
+    toy_robot (0.11.0)
 
 GEM
   remote: https://rubygems.org/
