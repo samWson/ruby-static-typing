@@ -21,6 +21,8 @@ module ToyRobot
     def turn_left: () -> void
     def turn_right: () -> void
 
+    def next_move: () -> (Array[Integer] | nil)
+
     private
 
     def turn: (:left | :right) -> void
@@ -39,6 +41,7 @@ module ToyRobot
 
     def place: (Integer, Integer, String) -> Robot?
     def move: () -> void
+    def robot_placed?: () -> bool
   end
 
   class Command

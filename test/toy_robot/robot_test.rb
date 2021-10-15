@@ -80,6 +80,10 @@ describe ToyRobot::Robot do
 
       _(@subject.direction).must_equal('EAST')
     end
+
+    it 'next move is to (0, 1)' do
+      assert_equal [0, 1], @subject.next_move
+    end
   end
 
   describe 'when facing south' do
@@ -103,6 +107,10 @@ describe ToyRobot::Robot do
       @subject.turn_right
 
       _(@subject.direction).must_equal('WEST')
+    end
+
+    it 'next move is to (0, -1)' do
+      assert_equal [0, -1], @subject.next_move
     end
   end
 
@@ -128,6 +136,10 @@ describe ToyRobot::Robot do
 
       _(@subject.direction).must_equal('SOUTH')
     end
+
+    it 'next move is to (1, 0)' do
+      assert_equal [1, 0], @subject.next_move
+    end
   end
 
   describe 'when facing west' do
@@ -151,6 +163,10 @@ describe ToyRobot::Robot do
       @subject.turn_right
 
       _(@subject.direction).must_equal('NORTH')
+    end
+
+    it 'next move is to (-1, 0)' do
+      assert_equal [-1, 0], @subject.next_move
     end
   end
 

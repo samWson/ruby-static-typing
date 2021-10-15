@@ -1,0 +1,6 @@
+place 1,2,NORTH
+Place 1,2,NORTH
+PlAcE 1,2,NORTH
+MoVe
+RePort
+InValiD CommandS

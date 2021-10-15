@@ -34,6 +34,28 @@ describe ToyRobot::Simulator do
       out, _ = capture_io do
         @subject.report
       end
+
+      assert_equal message, out
     end
+  end
+
+  it 'does no have the robot placed by default' do
+    refute @subject.robot_placed?
+  end
+
+  it 'has a placed robot' do
+    @subject.place(0, 0, 'NORTH')
+
+    assert @subject.robot_placed?
+  end
+
+  it 'informs us when a command is invalid' do
+    message = "'PLACE 1, 2, NORTH' is an invalid command\n"
+
+    out, _ = capture_io do
+      @subject.invalid("PLACE 1, 2, NORTH")
+    end
+
+    assert_equal message, out
   end
 end
