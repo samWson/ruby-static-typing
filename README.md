@@ -1,8 +1,6 @@
 # ToyRobot
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/toy_robot`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+This is an exercise in trying out typeing systems for Ruby. The program is Toy Robot based off the [ebook with the same name](https://leanpub.com/toyrobot/).
 
 ## Installation
 
@@ -30,9 +28,15 @@ A test script is included in the `bin/` directory. Use the command `bin/test` to
 
 ## Type Checking
 
+### Ruby 3 RBS
+
+This repo was created using [RBS](https://github.com/ruby/rbs) on the `main` branch.
+
+RBS is a language for describing Ruby types. It is included with Ruby 3.0. It still requires another program to use the described types for checks against the source code. RBS has no effect on Ruby at run time. For this repo I've used [`steep`](https://github.com/soutaro/steep) to do type checking.
+
 RBS type signatures are included in the `sig` directory. Use `steep` to type check the repository: `steep check`.
 
-`steep watch` can also be used to automatically check files as they are saved.
+`steep watch lib` can also be used to automatically check files as they are saved.
 
 ## Development
 
