@@ -21,7 +21,10 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency 'minitest'
+  spec.add_development_dependency 'sorbet'
+  spec.add_development_dependency 'tapioca'
 
+  spec.add_dependency 'sorbet-runtime'
   # For more information and examples about making a new gem, checkout our
   # guide at: https://bundler.io/guides/creating_gem.html
 end
