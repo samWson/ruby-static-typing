@@ -7,6 +7,8 @@ Gem::Specification.new do |spec|
   spec.version       = ToyRobot::VERSION
   spec.authors       = ["Sam Wilson"]
   spec.email         = ["sam.wilson@sharesight.co.nz"]
+  spec.license = "MIT"
+  spec.metadata = {source_code_uri: 'https://github.com/samWson/ruby-static-typing'}
 
   spec.summary       = "Toy Robot simulator."
   spec.required_ruby_version = ">= 2.4.0"
